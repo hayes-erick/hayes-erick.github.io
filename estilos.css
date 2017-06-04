@@ -1,0 +1,160 @@
+
+/*@import url('https://fonts.googleapis.com/css?family=Lato');*/
+/* latin-ext */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v13/UyBMtLsHKBKXelqf4x7VRQ.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lato Regular'), local('Lato-Regular'), url(fonts/lato.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+body {
+  margin: 0px;
+  font-family: 'Lato', sans-serif;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-flow:row wrap;
+  justify-content: space-between;
+}
+
+.container > header, .container > footer, .container > aside, .container > article {
+  flex: 1 100%;
+}
+
+.container > header {
+  text-align: center;
+}
+.container > header > h1 {
+  margin-bottom: 0px;
+}
+.container > header > h2 {
+  margin-top: 0px;
+}
+.container > aside, .container > article {
+  min-height: 100px;
+  background-color: #ebe5e5;
+}
+.container > article > h1 {
+  margin-bottom: 0px;
+  margin-top: 0px;
+  font-size: 60px;
+  font-weight: bold;
+  margin-left: 10px;
+}
+.container > article > h2 {
+  margin-top: 0px;
+  font-weight: normal;
+  margin-left: 10px;
+}
+#foto {
+  width: 80%;
+  height: auto;
+  max-width: 500px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.descContainer {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0px;
+}
+.resaltar {
+  flex: 0 25%;
+  min-width: 100px;
+  max-width: 150px;
+  margin-left: 10px;
+  line-height: 100px;
+  text-align: center;
+  border-radius: 50%;
+  color: white;
+}
+.res1 {background-color: #eb3355;}
+.res2 {background-color: #65cdd6;}
+.res3 {background-color: #d4c628;}
+.container > article > p {
+  padding: 20px;
+}
+.container > section {
+  flex: 1 100%;
+  min-height: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.tecnologia {
+  flex: 0 100%;
+  text-align: center;
+}
+.tecnologia > img {
+  height: 200px;
+  width: auto;
+}
+.tecnologia > p {
+  margin: 5px 20px;
+  margin-bottom: 10px;
+}
+.icon, .container > aside {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+.icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: #56d1cc;
+}
+.icon > img {
+  display: block;
+  width: 25px;
+  height: auto;
+  margin: auto;
+}
+.container > footer {
+  padding: 10;
+  background-color: #e83555;
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-around;
+}
+.refContainer {
+  display: flex;
+  margin-top: 10px;
+}
+.refData {
+  color: white;
+  margin-left: 10px;
+  font-size: small;
+}
+.socialMedia {
+  height: 20px;
+  margin-right: 5px;
+  width: auto;
+}
+
+/* Medium screens */
+@media only screen and (min-width: 768px) {
+  .container > aside, .container > article {
+    flex: 1 50%;
+  }
+  .resaltar {
+    line-height: 150px;
+  }
+  .tecnologia {
+    flex: 0 30%;
+    text-align: center;
+  }
+}
