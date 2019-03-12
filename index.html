@@ -7,7 +7,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <!-- Bootstrap CSS -->
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+    crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="libs/slick/slick.css" />
+  <link rel="stylesheet" type="text/css" href="libs/slick/slick-theme.css" />
+
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" id="astrid-body-fonts-css" href="//fonts.googleapis.com/css?family=Open+Sans%3A300%2C300italic%2C600%2C600italic&amp;ver=4.9.9"
     type="text/css" media="all">
@@ -17,7 +22,7 @@
 </head>
 
 <body>
-  <div class="fixed-top nav">
+  <div class="nav">
     <div class="container">
       <nav class="navbar navbar-expand-lg navbar-dark">
         <a class="navbar-brand" href="#">NICCO</a>
@@ -28,13 +33,16 @@
         <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" href="#primary">Uno</a>
+              <a class="nav-link" href="#primary">Servicios</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#second">Dos</a>
+              <a class="nav-link" href="#second">Sobre Nosotros</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#third">Tres</a>
+              <a class="nav-link" href="#forth">Colegios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#third">Tiendas</a>
             </li>
           </ul>
         </div>
@@ -90,42 +98,126 @@
       </div>
     </div>
   </div>
-  <div class="container-fluid" id="second" style="height:500px;">
-    <div class="container">
+  <div class="container-fluid" id="second">
+    <div class="container p-5 about-us">
       <h2 class="title">
         <span class="title-decoration"></span>
         SOBRE NOSOTROS
       </h2>
+      <div>
+        Lorem ipsum dolor , consectetur adipiscing elit. Nunc maximus vitae sapie Lorem
+        ipsum dolor sit amet, consectetur adipiselit. Nunc maximus vitae sapie
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc maximus vLorem
+        ipsum dolor sit amet, consectetur adipiscing elit. Nunc maximus vitae sapie
+      </div>
     </div>
   </div>
-  <div class="container" id="third" style="height:500px;">
+  <div class="container-fluid p-5" id="forth">
     <h2 class="title">
       <span class="title-decoration"></span>
-      SERVICIOS
+      Colegios
     </h2>
+    <div class="colegios-logos d-flex">
+      <div class="colegio">
+        <img src="imgs/scj.png" alt="orange" title="orange" /> Sagrado
+      </div>
+      <div class="colegio">
+        <img src="imgs/scj.png" alt="apple" title="apple" /> Tiquipaya
+      </div>
+      <div class="colegio">
+        <img src="imgs/scj.png" alt="banana" title="banana" /> Montesori
+      </div>
+      <div class="colegio">
+        <img src="imgs/scj.png" alt="blueberry" title="blueberry" />Humbold
+      </div>
+      <div class="colegio">
+        <img src="imgs/scj.png" alt="watermelon" title="watermelon" />Don Bosco
+      </div>
+      <div class="colegio">
+        <img src="imgs/scj.png" alt="cherry" title="cherry" />Bet-El
+      </div>
+      <div class="colegio">
+        <img src="imgs/scj.png" alt="strawberry" title="strawberry" />Maria Auxidiv
+      </div>
+      <div class="colegio">
+        <img src="imgs/scj.png" alt="avocado" title="avocado" />Humbold
+      </div>
+    </div>
+  </div>
+  <div class="container" id="third">
+    <h2 class="title">
+      <span class="title-decoration"></span>
+      Tiendas
+    </h2>
+    <div class="container">
+      <div class="row mb-3 border shadow-sm rounded p-0">
+        <div class="col-lg-4 d-flex align-items-center p-0">
+          <img src="imgs/sucre.jpg" class="rounded shadow sucre mb-3 mb-lg-0" alt="sucre">
+        </div>
+        <div class="col-lg-8 d-flex flex-column justify-content-center align-items-center">
+          <table class="local-data">
+            <tr>
+              <td>Ciudad: </td>
+              <td>Sucre</td>
+            </tr>
+            <tr>
+              <td>Dirección: </td>
+              <td>Avaroa #365 Esq. Grau</td>
+            </tr>
+            <tr>
+              <td>Teléfono: </td>
+              <td>464-14214</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div class="row border shadow-sm rounded p-0">
+        <div class="order-lg-last col-lg-4 p-0 d-flex justify-content-end align-items-center">
+          <img src="imgs/cocha.jpg" class="rounded shadow cocha mb-3 mb-lg-0" alt="sucre">
+        </div>
+        <div class="col-lg-8 d-flex flex-column justify-content-center align-items-center">
+          <table class="local-data">
+            <tr>
+              <td>Ciudad: </td>
+              <td>Cochabamba</td>
+            </tr>
+            <tr>
+              <td>Dirección: </td>
+              <td>IC Norte Hipodromo Local 2</td>
+            </tr>
+            <tr>
+              <td>Teléfono: </td>
+              <td>771XXXXX</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
   </div>
   <div class="fotter container-fluid">
     <div class="row">
       <div class="col-lg-4 logo-box">
-        <img src="imgs/niccoXS.png" alt="logo NICCO">
+        <img src="imgs/niccoXS.png" class="py-3" alt="logo NICCO">
       </div>
-      <div class="col-lg-8 row p0 fotter-icons d-flex justify-content-around">
-        <div class="col-md-4 icon-box">
-          <img src="imgs/i_home.png">
-          <div></div>
-          <span>Avaroa #365</span>
-        </div>
-        <div class="col-md-4 icon-box">
-          <img src="imgs/i_face.png">
-          <div></div>
-          <a target="_blank" href="https://www.facebook.com/confecciones.nicco.ropa.uniformes.sucre/">
-          NICCO
-        </a>
-        </div>
-        <div class="col-md-4 icon-box">
-          <img src="imgs/i_phone.png">
-          <div></div>
-          <span>464-14214</span>
+      <div class="col-lg-8 p0 fotter-icons d-flex justify-content-around">
+        <div class="row">
+          <div class="col-md-6 icon-box">
+            <img src="imgs/i_email.png">
+            <div></div>
+            <span>confeccionesnicco@gmail.com</span>
+          </div>
+          <div class="col-md-3 icon-box">
+            <img src="imgs/i_face.png">
+            <div></div>
+            <a target="_blank" href="https://www.facebook.com/confecciones.nicco.ropa.uniformes.sucre/">
+              NICCO
+            </a>
+          </div>
+          <div class="col-md-3 icon-box">
+            <img src="imgs/i_phone.png">
+            <div></div>
+            <span>75764949</span>
+          </div>
         </div>
       </div>
     </div>
@@ -133,9 +225,14 @@
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="libs/slick/slick.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
   <script src="scripts.js"></script>
 </body>
 

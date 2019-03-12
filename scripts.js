@@ -10,10 +10,20 @@ jQuery(function(a) {
 jQuery(function(a) {
   a('.navbar a[href^="#"], .button[href^="#"]').on("click", function(b) {
     b.preventDefault();
-    var c = this.hash, d = a(c);
+    var c = this.hash,
+      d = a(c);
     a("html, body").stop().animate({
       scrollTop: d.offset().top - 62
     }, 900);
+  });
+});
+
+jQuery(function($) {
+  $('.colegios-logos').slick({
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
   });
 });
 
